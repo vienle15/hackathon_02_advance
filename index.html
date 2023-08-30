@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <div id="container">
+        <h1>Thông tin học viên</h1>
+        <div id="input-container">
+          <label for="name-input">Họ và tên</label>
+          <input type="text" id="name-input" placeholder="Vui lòng nhập tên" />
+          <br />
+
+          <label for="email-input">Email</label>
+          <input
+            type="email"
+            id="email-input"
+            placeholder="vui lòng nhập email"
+          />
+          <br />
+
+          <label for="phone-input">Số điện thoại</label>
+          <input
+            type="tel"
+            id="phone-input"
+            placeholder="vui lòng nhập số điện thoại"
+          />
+          <br />
+
+          <label for="country-input">Quê Quán</label>
+          <input
+            type="text"
+            id="country-input"
+            placeholder="Vui lòng nhập quê quán"
+          />
+          <br />
+          <div class="gender">
+            <h3>Giới tính</h3>
+            <input id="gender" type="radio" name="gender" value="nam" />
+            Nam<br />
+            <input id="gender" type="radio" name="gender" value="nữ" />
+            Nữ<br />
+          </div>
+          <button id="add-btn">Lưu Lại</button>
+        </div>
+        <table id="my-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Họ Tên</th>
+              <th>Email</th>
+              <th>Điện THoại</th>
+              <th>Địa chỉ</th>
+              <th>Giới tính</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+        <div id="update-container">
+          <input type="text" id="update-name-input" />
+          <input type="text" id="update-email-input" />
+          <input type="text" id="update-phone-input" />
+          <input type="text" id="update-country-input" />
+          <input type="text" id="update-gender-input" />
+          <button id="update-btn">Update</button>
+          <button id="cancel-btn">Cancel</button>
+        </div>
+        <button onclick="sort()">alphabet sort</button>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

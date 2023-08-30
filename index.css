@@ -1,0 +1,58 @@
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+#input-container input {
+  display: flex;
+}
+.gender {
+  display: flex;
+  align-items: center;
+}
+button:hover {
+  background-color: #3e8e41;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: white;
+  color: black;
+}
+
+#update-container {
+  display: none;
+  margin-top: 20px;
+}
+
+#update-btn {
+  background-color: #2196f3;
+}
+#update-btn:hover {
+  cursor: pointer;
+}
+
+#cancel-btn {
+  background-color: #f44336;
+}
+
+.edit-btn {
+  background-color: white;
+}
+
+.delete-btn {
+  background-color: white;
+  margin-left: 10px;
+}
